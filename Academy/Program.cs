@@ -23,7 +23,7 @@ namespace Academy
 
             Human[] group = new Human[]
                 {
-                    student, teacher, graduate, tommy, tommy_grad,
+                    student, teacher, graduate, tommy,
                     new Graduate("Rosenberg", "Ken", 30, "Lawyer", "Vice", 45, 22, "How to get money back"),
                     new Teacher("Diaz", "Ricardo", 50, "Weapons distribution", 25)
                 };
