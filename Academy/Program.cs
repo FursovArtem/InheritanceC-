@@ -45,8 +45,6 @@ namespace Academy
                 strings.Add(line);
             }
             Human[] load = new Human[strings.Count];
-/*            string[] split = Regex.Split(strings[2], "(?=(?<= )\\p{Lu}(?=\\p{Ll}+ )|(?<= )\\p{Lu}{2,}|(?<= )\\d)");
-            foreach (string s in split) Console.WriteLine(s);*/
             for (int i = 0; i < load.Length; i++)
             {
                 if (strings[i].Contains("Academy.Human"))
