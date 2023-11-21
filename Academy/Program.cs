@@ -27,8 +27,8 @@ namespace Academy
                     new Graduate("Rosenberg", "Ken", 30, "Lawyer", "Vice", 45, 22, "How to get money back"),
                     new Teacher("Diaz", "Ricardo", 50, "Weapons distribution", 25)
                 };
+            Directory.SetCurrentDirectory("..\\..");
             StreamWriter sw = new StreamWriter("group.txt");
-
             foreach (Human i in group)
             {
                 sw.Write(i.GetType() + ": ");
@@ -36,7 +36,6 @@ namespace Academy
             }
             sw.Close();
             System.Diagnostics.Process.Start("notepad", $"{Directory.GetCurrentDirectory()}\\group.txt");
-
             StreamReader sr = new StreamReader("group.txt");
             List<string> strings = new List<string>();
             while (!sr.EndOfStream)
