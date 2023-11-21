@@ -50,19 +50,19 @@ namespace Academy
                 if (strings[i].Contains("Academy.Human"))
                 {
                     strings[i] = strings[i].Replace("Academy.Human: ", "").Replace(" лет", "");
-                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<= )\\d)");
+                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<=\\s)\\d)");
                     load[i] = new Human(split[0], split[1], Convert.ToInt32(split[2]));
                 }
                 else if (strings[i].Contains("Academy.Student"))
                 {
                     strings[i] = strings[i].Replace("Academy.Student: ", "").Replace(" лет", "");
-                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<= )\\d)");
+                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<=\\s)\\d)");
                     load[i] = new Student(split[0], split[1], Convert.ToInt32(split[2]), split[3], split[4], Convert.ToDouble(split[5]), Convert.ToDouble(split[6]));
                 }
                 else if (strings[i].Contains("Academy.Teacher"))
                 {
                     strings[i] = strings[i].Replace("Academy.Teacher: ", "").Replace(" лет", "");
-                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<= )\\d)");
+                    string[] split = Regex.Split(strings[i], "(?=(?<=\\s)\\p{Lu}|(?<=\\s)\\d)");
                     load[i] = new Teacher(split[0], split[1], Convert.ToInt32(split[2]), split[3], Convert.ToInt32(split[4]));
                 }
                 else if (strings[i].Contains("Academy.Graduate"))
