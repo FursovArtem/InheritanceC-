@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AbstractGeometry
 {
-    internal abstract class Shape
+    internal abstract class Shape : IDrawable
     {
         const int START_X_MIN_VALUE = 10;
         const int START_Y_MIN_VALUE = 10;

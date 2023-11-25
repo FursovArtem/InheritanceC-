@@ -42,7 +42,7 @@ namespace AbstractGeometry
             set
             {
                 if (value < MIN_LENGTH) value = MIN_LENGTH;
-                if (value > MAX_LENGTH) value= MAX_LENGTH;
+                if (value > MAX_LENGTH) value = MAX_LENGTH;
                 hypotenuse = value;
             }
         }
@@ -89,6 +89,10 @@ namespace AbstractGeometry
             Console.WriteLine($"Катет b: {Side_b}");
             Console.WriteLine($"Гипотенуза: {Hypotenuse}");
             base.Info(e);
+        }
+        public override void DrawHeight(PaintEventArgs e)
+        {
+            
         }
     }
 }

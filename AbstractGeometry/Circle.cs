@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace AbstractGeometry
 {
-    internal class Circle : Shape
+    internal class Circle : Shape, IHaveRadius
     {
         double length;
         public double Length
@@ -45,11 +45,17 @@ namespace AbstractGeometry
         {
             Pen pen = new Pen(Color, LineWidth);
             e.Graphics.DrawEllipse(pen, StartX, StartY, (int)GetDiameter(), (int)GetDiameter());
+            DrawRadius(e);
         }
         public override void Info(PaintEventArgs e)
         {
             Console.WriteLine(this.GetType());
             base.Info(e);
+        }
+        public void DrawRadius(PaintEventArgs e)
+        {
+            Pen pen = new Pen(Color, LineWidth);
+            e.Graphics.DrawLine(pen, StartX + (float)GetRadius(), StartY + (float)GetRadius(), StartX, StartY + (float)GetRadius());
         }
     }
 }
