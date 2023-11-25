@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClass", "AbstractCl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geometry.csproj", "{8271BDB4-C0FB-4D56-ADCB-6AB192B30282}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractGeometry", "AbstractGeometry\AbstractGeometry.csproj", "{2C21E4A4-82C3-4E2F-83EA-F09A22FFCACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8271BDB4-C0FB-4D56-ADCB-6AB192B30282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8271BDB4-C0FB-4D56-ADCB-6AB192B30282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8271BDB4-C0FB-4D56-ADCB-6AB192B30282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C21E4A4-82C3-4E2F-83EA-F09A22FFCACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C21E4A4-82C3-4E2F-83EA-F09A22FFCACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C21E4A4-82C3-4E2F-83EA-F09A22FFCACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C21E4A4-82C3-4E2F-83EA-F09A22FFCACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
