@@ -78,7 +78,7 @@ namespace AbstractGeometry
             {
                 new Point(StartX, StartY + (int)GetHeight()),
                 new Point(StartX + (int)Hypotenuse, StartY + (int)GetHeight()),
-                new Point(StartX + (int)(Math.Sqrt(Math.Pow(GetHeight(), 2) + Math.Pow(Side_b, 2)) / Math.Pow(GetHeight(), 2)), StartY)
+                new Point(StartX + (int)Math.Sqrt(Math.Pow(Side_a, 2) - Math.Pow(GetHeight(), 2)), StartY)
             };
             e.Graphics.DrawPolygon(pen, points);
         }
