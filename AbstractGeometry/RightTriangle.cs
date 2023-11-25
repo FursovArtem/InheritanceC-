@@ -81,6 +81,7 @@ namespace AbstractGeometry
                 new Point(StartX + (int)Math.Sqrt(Math.Pow(Side_a, 2) - Math.Pow(GetHeight(), 2)), StartY)
             };
             e.Graphics.DrawPolygon(pen, points);
+            DrawHeight(e);
         }
         public override void Info(PaintEventArgs e)
         {
@@ -92,7 +93,8 @@ namespace AbstractGeometry
         }
         public override void DrawHeight(PaintEventArgs e)
         {
-            
+            Pen pen = new Pen(Color, LineWidth);
+            e.Graphics.DrawLine(pen, StartX + (float)Math.Sqrt(Math.Pow(Side_a, 2) - Math.Pow(GetHeight(), 2)), StartY, StartX + (float)Math.Sqrt(Math.Pow(Side_a, 2) - Math.Pow(GetHeight(), 2)), StartY + (float)GetHeight());
         }
     }
 }
